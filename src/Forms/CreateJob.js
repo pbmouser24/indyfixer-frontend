@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import './CreateJob.css'
 
 
 const Categories = ["Interior Design", "Flooring", "Plumbing", "Housekeeping", "Landscaping", "Mounting", "Pool Maintenance", "Home Security"]
@@ -45,7 +46,9 @@ const CreateJob = () => {
 
     return (
         <>
-            <h1>Post a Job</h1>
+            <div className="createJobs">
+            {/* <h1>Post a Job</h1> */}
+            
             {error && <p className="error">{error}</p>}
             <form onSubmit={SubmitJob}>
                 <select
@@ -88,6 +91,7 @@ const CreateJob = () => {
 
                 <button>Create Job</button>
             </form>
+            </div>
         </>
     );
 }
