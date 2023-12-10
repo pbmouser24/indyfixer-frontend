@@ -76,10 +76,10 @@ const CreateJob = () => {
                     placeholder="City"
                     value={City}
                     onChange={e => setCity(e.target.value)} />
-                <input
+                {/* <input
                     placeholder="Zip Code"
                     value={ZipCode}
-                    onChange={e => setZipCode(e.target.value)} />
+                    onChange={e => setZipCode(e.target.value)} /> */}
                 <label>
                     Please enter date project is needed:
                     <input
